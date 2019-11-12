@@ -1,2 +1,5 @@
-# 코드 Case Study
-코드 케이스 스터디
+## 코드 Case Study
+### Basic 
+    - FizzBuzz
+    - Fibonacci
+    - Reverse 
