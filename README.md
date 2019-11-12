@@ -2,6 +2,8 @@
 ### Basic 
     - FizzBuzz
     - Fibonacci
-    - Reverse 
+    - Reverse String
     - Palindromes
+    - Reverse Inetger
+    
     
