@@ -8,3 +8,6 @@
     - max char
 ### Array
     - chunk
+### Map
+    - Anagram
+    
