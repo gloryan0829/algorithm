@@ -4,9 +4,9 @@
   and for the multiples of five print “Buzz”.
   For numbers which are multiples of both three and five print “FizzBuzz”.
  */
-const fizzBuzz = () => {
+const fizzBuzz = (_until) => {
   const result = [];
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 1; i <= _until; i++) {
       result.push(((i % 3 === 0 ? 'Fizz':'') + (i % 5 === 0 ? 'Buzz':'')) || i)
   }
   return result;

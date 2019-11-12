@@ -5,5 +5,6 @@
     - Reverse String
     - Palindromes
     - Reverse Inetger
-    
-    
+    - max char
+### Array
+    - chunk

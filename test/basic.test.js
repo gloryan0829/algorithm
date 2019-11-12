@@ -3,6 +3,7 @@ import fibonacci from "../src/basic/fibonacci";
 import {reverseStringSolution1, reverseStringSolution2, reverseStringSolution3} from "../src/basic/reverseString";
 import {palindromeSolution1, palindromeSolution2} from "../src/basic/palindrome";
 import {reverseInteger} from "../src/basic/reverseInteger";
+import maxChar from "../src/basic/maxChar";
 
 const chai = require('chai')
     , expect = chai.expect
@@ -10,7 +11,7 @@ const chai = require('chai')
 
 describe("Basic Test", () => {
     it('FizzBuzz Test',  (done) => {
-        const result = fizzBuzz();
+        const result = fizzBuzz(1000);
         result.map(i => console.log(i));
         result[14].should.equal('FizzBuzz');
         result[2].should.equal('Fizz');
@@ -45,6 +46,11 @@ describe("Basic Test", () => {
         reverseInteger(500).should.equal(5);
         reverseInteger(-90).should.equal(-9);
         reverseInteger(-15).should.equal(-51);
+        done();
+    });
+
+    it('Max Character Test',  (done) => {
+        maxChar('aaadbbbbddddddeeeeewwqqqqq').should.equal("d");
         done();
     });
 });
