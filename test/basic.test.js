@@ -1,6 +1,7 @@
 import fizzBuzz from '../src/basic/fizzBuzz'
 import fibonacci from "../src/basic/fibonacci";
 import {reverseStringSolution1, reverseStringSolution2, reverseStringSolution3} from "../src/basic/reverseString";
+import {palindromeSolution1, palindromeSolution2} from "../src/basic/palindrome";
 const chai = require('chai')
     , expect = chai.expect
     , should = chai.should();
@@ -26,6 +27,14 @@ describe("Basic Test", () => {
         reverseStringSolution1('Apple').should.equal('elppA');
         reverseStringSolution2('Apple').should.equal('elppA');
         reverseStringSolution3('Apple').should.equal('elppA');
+        done();
+    });
+
+    it('Palindrome Test', (done) => {
+        palindromeSolution1('civic').should.equal(true);
+        palindromeSolution1('apple').should.equal(false);
+        palindromeSolution2('civic').should.equal(true);
+        palindromeSolution2('apple').should.equal(false);
         done();
     });
 });
