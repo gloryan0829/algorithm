@@ -6,6 +6,7 @@
     - Palindromes
     - Reverse Inetger
     - max char
+    - Capitalize
 ### Array
     - chunk
 ### Map

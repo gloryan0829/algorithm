@@ -4,6 +4,7 @@ import {reverseStringSolution1, reverseStringSolution2, reverseStringSolution3} 
 import {palindromeSolution1, palindromeSolution2} from "../src/basic/palindrome";
 import {reverseInteger} from "../src/basic/reverseInteger";
 import maxChar from "../src/basic/maxChar";
+import capitalize from "../src/basic/capitalize";
 
 const chai = require('chai')
     , expect = chai.expect
@@ -51,6 +52,13 @@ describe("Basic Test", () => {
 
     it('Max Character Test',  (done) => {
         maxChar('aaadbbbbddddddeeeeewwqqqqq').should.equal("d");
+        done();
+    });
+
+    it('capitalize Test', done => {
+        const sentence = "wow, you good";
+        const result = capitalize(sentence);
+        console.log(result);
         done();
     });
 });
