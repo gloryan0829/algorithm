@@ -1,15 +1,13 @@
-import {chunkSolution1, chunkSolution2} from "../src/array/chunk";
+import {steps , uglyStepsSolution} from "../src/recursive/stepsPrint";
 
 const chai = require('chai')
     , expect = chai.expect
     , should = chai.should();
 
-describe('Array Test', () => {
-    it('Chunk Test',  (done) => {
-        const result = chunkSolution1([1,2,3,4,5],2);
-        const result2 = chunkSolution2([1,2,3,4,5],2);
-        console.log(result);
-        console.log(result2);
+describe('Recursive Test', () => {
+    it('steps Test',  (done) => {
+        // console.log(uglyStepsSolution(10));
+        steps(10);
         done();
     });
 });
